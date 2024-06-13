@@ -1,1 +1,16 @@
-sdfgsgsdf
+##TASK##
+Configure crontab access on App Server 1 as follows: Allow crontab access to kirsty user while denying access to the garrett user.
+
+##Solution##
+#You can add the usernames in /etc/cron.allow to allow a user and /etc/cron.deny to deny a user#
+#if you cannot locate the these files, you can create them in /etc/
+
+
+
+
+
+
+
+
+
+
