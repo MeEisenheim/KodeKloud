@@ -1,0 +1,19 @@
+##STEP1##
+#Check the current system level by typing this command#
+[tony@stapp01 ~]$ systemctl get-default
+
+#These are the following runlevels
+#RUN LEVEL EQUIVALENTS
+#runlevel0	poweroff.target
+#runlevel1	rescue.target
+#runlevel2	multi-user.target
+#runlevel3	multi-user.target
+#runlevel4	multi-user.target
+#runlevel5	graphical.target
+#runlevel6	reboot.target
+
+##STEP2##
+#Change the default runlevel using this command#
+systemctl set-default graphical.target
+systemctl start graphical.target
+
