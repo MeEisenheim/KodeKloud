@@ -1,0 +1,7 @@
+##1st Step##
+#Check the date and time of the system using the command below#
+timedatectl status
+
+##2nd step##
+##Change the timezone using this command#
+timedatectl set-timezone
