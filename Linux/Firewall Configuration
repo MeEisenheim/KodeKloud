@@ -1,0 +1,29 @@
+##TASK: Allow all incoming connections on port 3004/tcp. Ensure the zone is set to public.
+
+##step1##
+##check if the firewall service is active##
+sudo systemctl status firewalld
+
+##start the service if it is inactive
+sudo systemctl enable firewalld
+sudo systemct start firewalld
+
+##step2##
+#Check the firewall configuration#
+sudo firewall-cmd --list-all
+
+#you can also check config by zone,service,ports opened
+sudo firewall-cmd --list-all --zone=public
+sudo firewall-cmd --list-ports
+sudo firewall-cmd --list-services
+
+##step3##
+#allow the application port to the public#
+sudo firewall-cmd --permanent --zone=public --add-port=3004/tcp
+
+
+##step4##
+#finally reload the firewall to incorporate the new config to the existing
+sudo firewall-cmd --reload
+
+DONE!!!
