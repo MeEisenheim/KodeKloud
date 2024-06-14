@@ -1,0 +1,7 @@
+##step1##
+##create a docker with the name nginx_1 using image nginx with alpine as tag and make sure it is running#
+docker run --name nginx_1 -d nginx:alpine sleep 10000
+
+##step2##
+#check if the container is running
+docker ps
