@@ -1,0 +1,18 @@
+#Your task is to configure NTP on App Server 2 as follows:
+#1. Install and configure NTP server.
+#2. Add NTP server 1.south-america.pool.ntp.org in NTP configuration.
+
+##step1##
+##Install ntpd service##
+sudo yum install ntp
+
+##Step2##
+##Start and enable ntp service##
+sudo systemctl enable ntpd
+sudo systemctl start ntpd
+
+##step3## 
+#Config the /etc/ntp.conf file and add the server
+server 1.south-america.pool.ntp.org
+
+DONE!!!
