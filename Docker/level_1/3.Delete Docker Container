@@ -1,0 +1,11 @@
+##step1##
+##to delete a container, you must stop it first if it is running##
+docker stop <container_name>
+
+##step2##
+##verify if the docker container is not running
+docker ps -a
+
+##step3##
+#remove the docker container#
+docker rm <container_name>
