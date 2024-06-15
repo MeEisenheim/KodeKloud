@@ -1,0 +1,14 @@
+##STEP1##
+##Inorder to access the bash of the kkloud container, do this commnand##
+docker exec -it kkloud bash
+
+##STEP2##
+##Install apache2 in the container
+apt install apache2 -y
+
+##Step3##
+##go to /etc/apache2/ports.conf and change the LISTEN 80 to LISTEN 5002 as required##
+
+##Step4##
+#restart the apache service
+service apache2 restart
