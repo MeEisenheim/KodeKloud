@@ -1,1 +1,20 @@
+##TASK:a. Pull busybox:musl image on App Server 2 in Stratos DC and re-tag (create new tag) this image as busybox:blog##
 
+##Step1##
+#Pull the docker busybox:musl
+docker pull busybox:musl
+
+#Check if the image is already pulled
+docker images
+
+##STEP2##
+#Retag the docker image
+
+docker tag busybox:musl busybox:blog
+
+#check docker images and you will see to images
+
+##STEP3##
+#Remove the old image
+
+docker rmi busybox:musl
