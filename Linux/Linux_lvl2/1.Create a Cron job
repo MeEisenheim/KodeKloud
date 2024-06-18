@@ -1,1 +1,14 @@
+##STEP1##
+##Install cronie##
+sudo yum install cronie -y
 
+##STEP2##
+##Start crond service
+sudo systemctl start crond
+
+##Step3##
+##sudo crontab so that this task will be given to root
+sudo crontab -e
+
+#add thi file in crontab
+*/5 * * * * echo hello > /tmp/cron_text
