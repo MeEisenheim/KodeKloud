@@ -1,0 +1,9 @@
+
+##Docker file created##
+
+FROM ubuntu
+RUN apt update
+RUN apt install apache2 -y
+RUN service apache2 start
+RUN sed -i 's/Listen 80/Listen 5000/g' /etc/apache2/ports.conf
+RUN service apache2 restart
